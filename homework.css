@@ -18,7 +18,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color:lightgray;
     color: black;
 }
 .heroimage{
@@ -37,4 +37,203 @@ nav a:hover {
     transform: translate(-50%, -50%);
     color: white;
     font-size:34px;
+}
+section{
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns:1fr  1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      '. top top '
+      ' . show1 btn1 '
+      ' . show2 btn2 '
+      ' . show3 btn3 '
+      ' . show4 btn4 '
+      ' . show5 btn5 ';
+    background-color:white;
+}
+#top{
+  grid-area: top;
+  background-color:lightgray;
+  text-align:center
+  
+}
+#show1{
+  grid-area: show1;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+  border-bottom:1px solid
+    
+}
+#show2{
+  grid-area: show2;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+    border-bottom:1px solid
+}
+#show3{
+  grid-area: show3;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+    border-bottom:1px solid
+}
+#show4{
+  grid-area: show4;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+    border-bottom:1px solid
+}
+#show5{
+  grid-area: show5;
+  background-color: white;
+   text-align: center;
+  padding: 20px 0;
+    border-bottom:1px solid
+}
+img{
+  float:left
+}
+p{
+  padding:0;
+  
+}
+.btn1{
+  grid-area: btn1;
+  float:right;
+  background-color:orange;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn2{
+  grid-area: btn2;
+  float:right;
+  background-color:orange;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn3{
+  grid-area: btn3;
+  float:right;
+  background-color:orange;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn4{
+  grid-area: btn4;
+  float:right;
+  background-color:orange;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn5{
+  grid-area: btn5;
+  float:right;
+  background-color:orange;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer{
+   margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "map info shows social"
+      "map icon1 shows1 Social1"
+      "map icon2 shows2 Social2"
+      "map icon3 shows3 Social3"
+      "map icon4 shows4 Social4";
+      background-color:black;
+      color:white;
+   }
+#map{
+  grid-area:map;
+  margin: 25px;
+  padding:10px;
+}
+#info{
+  grid-area: info;
+  text-align:center;
+}
+#icon1{
+  grid-area:icon1;
+  Margin:15px;
+  float:left
+  
+}
+#text1{
+  grid-area:icon1;
+  padding:15px;
+  margin:0px;
+  text-align:center
+}
+#icon2{
+  grid-area:icon2;
+  padding:15px;
+  Margin:0px;
+  float:left
+  
+}
+#text2{
+  grid-area:icon2;
+  padding:15px;
+  margin:0px;
+  text-align:center
+}
+#icon3{
+  grid-area:icon3;
+  padding:15px;
+  Margin:0px;
+  float:left 
+  
+}
+#text3{
+  grid-area:icon3;
+  padding:10px;
+  margin:0px;
+  text-align:center;
+}
+#shows{
+   grid-area: shows;
+  text-align:center;
+}
+#shows1{
+  grid-area:shows1;
+    text-align:center;
+}
+#shows2{
+  grid-area:shows2;
+    text-align:center;
+}
+#shows3{
+  grid-area:shows3;
+    text-align:center;
+}
+#shows4{
+  grid-area:shows4;
+    text-align:center;
+}
+#social{
+  text-align:center;
+}
+#social1{
+  text-align:center
+}
+#social2{
+  text-align:center
+}
+#social3{
+  text-align:center
 }
